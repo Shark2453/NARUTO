@@ -8,9 +8,9 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7219302227:AAHUz5hwIsJefweWl8nINUAyBQjdn0n55wI')
+bot = telebot.TeleBot('7637756298:AAEXyHqinILB5a-nhWxvWganKusP3Oxv1ds')
 # Join :- https://t.me/FREEddosJoinnow # Admin user IDs
-admin_id = ["5976309679"]
+admin_id = ["5904877352"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -149,7 +149,7 @@ def add_user(message):
         else:
             response = "𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗽𝗲𝗰𝗶𝗳𝘆 𝗮 𝘂𝘀𝗲𝗿 𝗜𝗗 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 ( 𝟭𝗵𝗼𝘂𝗿, 𝟭𝗱𝗮𝘆𝘀, 𝟳𝗱𝗮𝘆𝘀, 𝟯𝟬𝗱𝗮𝘆𝘀 ) 𝘁𝗼 𝗮𝗱𝗱 😘."
     else:
-        response = "𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @MrHellenG 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨."
+        response = "𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @radhe2453 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨."
 
     bot.reply_to(message, response)
 
@@ -281,9 +281,9 @@ COOLDOWN_TIME =0
 def handle_bgmi(message):
     user_id = str(message.chat.id)
     if user_id in allowed_user_ids:
-        # Join :- @MrHellenG # Check if the user is in admin_id (admins have no cooldown)
+        # Join :- @radhe2453 # Check if the user is in admin_id (admins have no cooldown)
         if user_id not in admin_id:
-            # Join :- @MrHellenG # Check if the user has run the command before and is still within the cooldown period
+            # Join :- @radhe2453 # Check if the user has run the command before and is still within the cooldown period
             if user_id in bgmi_cooldown and (datetime.datetime.now() - bgmi_cooldown[user_id]).seconds <0:
                 response = "𝗬𝗼𝘂 𝗔𝗿𝗲 𝗢𝗻 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻 . 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 0 Seconds 𝗕𝗲𝗳𝗼𝗿𝗲 𝗥𝘂𝗻𝗻𝗶𝗻𝗴 𝗧𝗵𝗲 /bgmi 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗔𝗴𝗮𝗶𝗻."
                 bot.reply_to(message, response)
@@ -308,7 +308,7 @@ def handle_bgmi(message):
         else:
             response = "🤦‍♂️𝙐𝙨𝙖𝙜𝙚: /𝙗𝙜𝙢𝙞 <𝙞𝙥> <𝙥𝙤𝙧𝙩> <𝙩𝙞𝙢𝙚_𝙨𝙚𝙘𝙤𝙣𝙙𝙨>\n\n🤷‍♀️𝙀𝙭𝙖𝙢𝙥𝙡𝙚  /bgmi 20.235.94.237 17870 200"  # Join :- https://t.me/FREEddosJoinnow # Updated command syntax
     else:
-        response = " 𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @MrHellenG 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨"
+        response = " 𝘼𝙘𝙘𝙚𝙨𝙨 𝙙𝙚𝙣𝙞𝙚𝙙\n𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩\n𝙠𝙞𝙣𝙙𝙡𝙮 𝘿𝙢 @radhe2453 𝙏𝙤 𝙂𝙚𝙩 𝘼𝙘𝙘𝙚𝙨𝙨"
 
     bot.reply_to(message, response)
 
@@ -376,7 +376,7 @@ def welcome_plan(message):
 @bot.message_handler(commands=['buy'])
 def welcome_plan(message):
     user_name = message.from_user.first_name
-    response = f''' ☑️ 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙁𝙤𝙧 @MrHellenG 𝙏𝙤 𝙂𝙚𝙩 ??𝙘𝙘𝙚𝙨𝙨 🍾
+    response = f''' ☑️ 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙁𝙤𝙧 @radhe2453 𝙏𝙤 𝙂𝙚𝙩 ??𝙘𝙘𝙚𝙨𝙨 🍾
 '''
     bot.reply_to(message, response)
 
